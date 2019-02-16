@@ -1,0 +1,39 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mocha Tests</title>
+    <link href="https://unpkg.com/mocha@4.0.1/mocha.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+
+  <!-- YOUR HTML HERE -->
+  <button id='changeButton' onclick='changeHeroName()' >Change hero name</button>
+  
+  <div id='herostats'>
+  </div>
+    <div id='enemystats'>
+    </div>
+  <img id='inn' onclick='rest(hero)' src='https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/6cb9729d-8e7b-43a4-a8d4-b1b480145181/dagp32k-21c60eec-e50a-4cf8-a13a-d2896dca2c81.jpg/v1/fill/w_1024,h_751,q_70,strp/medieval_fantasy_inn_by_serpentcrown_dagp32k-fullview.jpg'>
+  <div id='daggerparty'><div id='innerdaggerparty'>
+    <img id='dagger' onclick="pickUpItem(hero, weapon)" src='https://images-na.ssl-images-amazon.com/images/I/61Q2YLoW21L._UY550_.jpg'>
+  </div></div>
+  <img id='bag' onclick="equipWeapon(hero)" src='https://www.myredqueen.com/4483-home_default/gg-marmont-gucci-bag.jpg'>
+  <img id='unicorn' onclick="fightEnemy(hero, enemy)" src='https://i.ytimg.com/vi/GOti8e3KhTs/maxresdefault.jpg'>
+
+
+
+  <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
+  <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
+  <div id="mocha"></div>
+
+  <script src="https://unpkg.com/chai@4.1.2/chai.js"></script>
+  <script src="https://unpkg.com/mocha@4.0.1/mocha.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sinon@3/pkg/sinon.js"></script>
+  <script>mocha.setup('bdd')</script>
+  <script src="YOUR_JAVASCRIPT_HERE.js"></script>
+  <script src="game_logic.test.js"></script>
+
+</body>
+</html>

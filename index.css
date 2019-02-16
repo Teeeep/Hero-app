@@ -1,0 +1,23 @@
+#innerdaggerparty {
+    display: inline;
+}
+
+#daggerparty {
+    display: inline;
+}
+
+#changeButton {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+#stats {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+img {
+   height: 20vh;
+   width: auto;  
+}
